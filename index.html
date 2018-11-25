@@ -12,11 +12,11 @@
  </head>
   
   <style type="text/css">
-    h4{
+    h1{
     color:red;
     }
     .game{
-    width:1600px;
+    width:100%;
     height:900px;
     margin:20px 20px 20px 20px;     
    background-image:url(images/bg2.jpg); 
@@ -32,8 +32,8 @@
     }
     
     a{
-      font-size:20px;
-      color:#00ff00;
+      font-size:40px;
+      color:#7320de;
     }
     .hotdog{
       /*background: url(image/dog.gif) no-repeat;*/
@@ -43,9 +43,17 @@
       left: 700px;
 
     }
+
+    .showgo a:hover{
+
+      font-size:40px;
+      color:#000000;
+
+    }
+
       
   </style>
-
+    
 
 <body>
   
@@ -57,21 +65,27 @@
 
   <div class='hotdog'>
 
-
   </div>
     
-    <h4>单机游戏列表</h4><br>
+    <h1>单机游戏列表</h1><br>
 
-<span><a href="games/Chinesechess/index.html">中国象棋</a></span>
-<span><a href="games/frong/index.html">青蛙捉虫</a></span>
-<span> <a href="games/supermario/index.html">超级玛丽</a></span>
-<span> <a href="games/fish/index.html">捕鱼达人</a></span>
+<a href="games/Chinesechess/index.html">中国象棋</a>
+<span class="showgo"><a href="games/Chinesechess/index.html">中国象棋</a></span>
+<span class="showgo"><a href="games/frong/index.html">青蛙捉虫</a></span>
+<span class="showgo"> <a href="games/supermario/index.html">超级玛丽</a></span>
+<span class="showgo"> <a href="games/fish/index.html">捕鱼达人</a></span>
 
-<span> <a href="games/fish/index.html">捕鱼达人</a></span>
+<div>
+
+
 
 
   </div>
   </div>
+<script type="text/javascript">
+var str=[];
+
+</script>
 </body>
   
 </html>
