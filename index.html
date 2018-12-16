@@ -52,10 +52,21 @@
           clear:both;
       }
 
-      .newBox span{
+     .blList .newBox .showgo{
+         /*float:left;*/
+         margin-left: 20px;
+         font-size: 15px;
+      }
 
-          clear: both;
-          margin-top: 100px;
+      .sst{
+        cursor: pointer;
+          clear:both;
+          background-color: #32ad5e;
+          color: #da857b;
+          margin-top: 10px;
+          position: absolute;
+          /*top: 30px;*/
+          left:  238px
       }
   </style>
     
@@ -68,7 +79,7 @@
   <div id="panel">
   <div class='hotdog'>
   </div>
- <h1>单机游戏列表</h1><br>
+ <!--<h1>单机游戏列表</h1><br>
 
 <a href="games/Chinesechess/index.html">中国象棋</a>
 <span class="showgo"><a href="games/Chinesechess/index.html">中国象棋</a></span>
@@ -83,15 +94,14 @@
     <span class="showgo"> <a href="games/supermario/index.html">超级玛丽</a></span>
     <span class="showgo"> <a href="games/fish/index.html">捕鱼达人</a></span>
   </div>
-  </div>
+  </div>-->
 <div class="blList">
-
-
+</div>
+    <input type="button" value="确认选择！" class="sst"/>
 </div>
 
-
 </div>
-
+</body>
 <script type="text/javascript" src="static/js/jquery-3.3.1.min.js"></script>
 <!--<script type="text/javascript" src="../jquery-3.3.1.min.js"></script>-->
 <script>
@@ -115,6 +125,20 @@ window.onload=function (){
     // alert(html);
     $('.blList').html(html);
 }
+
+$('.sst').click(function () {
+  $.ajaxSetup(
+      $(this).css({"color":"yellow","background-color":"red"}),
+      // $('.blList').css("display","none"),
+      $(this).addClass("idd")
+  )
+})
+
+
+
+
+
+
 </script>
-</body>
+
 </html>
